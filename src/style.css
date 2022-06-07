@@ -75,7 +75,7 @@
 /* Home section styling*/
 .home{
     display: flex;
-    background: url("/home/kg/gitWorkSpace/kg-Com/resources/1.LandingPage/static/portfolio-images/images/banner.jpg")no-repeat center;
+    background: url("../static/images/banner.jpg")no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500;
@@ -126,7 +126,7 @@
 
 
 /* about section styling start */
-/* 
+
 .about{
     font-family: 'Poppins', sans-serif;
 }
@@ -142,7 +142,7 @@
     width: 400px;
     object-fit: cover;
 
-} */
+}
 
 
 
