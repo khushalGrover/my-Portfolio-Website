@@ -85,6 +85,7 @@
 .home{
     display: flex;
     background: url("../static/images/banner.jpg")no-repeat center;
+    /* background-color: #1b1b1b; */
     height: 100vh;
     color: #fff;
     min-height: 500;
@@ -95,6 +96,13 @@
 
 .home .max-width{
     margin: auto 0 auto 40px; 
+    height: 100vh;
+}
+
+.home .home-content{
+    position: absolute;
+    justify-content: center;
+    top: 40%;
 }
 
 .home .home-content .text-1{
@@ -196,6 +204,10 @@ section .title::after{
 
 /* about section styling start */
 
+.about .max-width {
+    height: 100vh ;
+    
+}
 
 .about .title::after{
     content: "Who I am";
@@ -207,7 +219,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;  
+    border-radius: 50%;  
 }
 .about .about-content .right{
     width: 55%;
@@ -258,6 +270,7 @@ section .title::after{
 
 
 /* services section styling */
+
 .services{
     color: #fff;
     background: #111;
@@ -275,6 +288,7 @@ section .title::after{
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .services .serv-content .card:hover{
