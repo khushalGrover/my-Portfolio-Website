@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,900&family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,900&family=Ubuntu:wght@400;500;700&display=swap'); */
+@font-face {
+    font-family: 'MyFont';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../static/fonts/indie_flower/IndieFlower.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyFont2';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../static/fonts/itim/Itim-Regular.ttf') format('truetype');
+}
+:root {
+    --primary-c1: #F7F8D7;
+    --primary-c2: #E9C6A6;
+    --secondary-c1: #3C3B3B;
+    --secondary-c2: #2E2E2E;
+    --secondary-c3: #111;
+}
 
 *
 {
@@ -14,16 +33,17 @@
 }
 /* navBar style */
 .navbar{
+    background-color: transparent;
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0px;
-    font-family: 'Ubuntu', sans-serif;
+    /* padding: 30px 0px; */
+    font-family: 'MyFont', sans-serif;
     transition: all 0.5s ease;
 }
 .navbar.sticky{
-    padding: 10px 0;
-    background: crimson;
+    /* padding: 10px 0; */
+    background: var(--secondary-c2);
 }
 .navbar .max-width{
     display: flex;
@@ -32,18 +52,18 @@
 }
 
 .navbar .logo a{
-    color: #fff;
+    color: var(--primary-c1);
     font-size: 35px;
     font-weight: 600;
 }
 
 .navbar .logo a span{
-    color: crimson;
+    color: var(--primary-c2);
     transition: all 0.5s ease;
 
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: var(--primary-c1);
 }
 
 .navbar .menu li{
@@ -52,21 +72,21 @@
     
 }
 .navbar .menu li a{
-    color: #fff;
+    color: var(--primary-c1);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.5s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: var(--primary-c2);
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: var(--primary-c1);
 }
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: var(--primary-c1);
     font-size: 23px;
     cursor: pointer;
     display: none; 
@@ -79,19 +99,17 @@
 
 
 
-
-
 /* Home section styling*/
 .home{
     display: flex;
-    background: url("../static/images/banner.jpg")no-repeat center;
-    /* background-color: #1b1b1b; */
+    /* background: url("../static/images/banner.jpg")no-repeat center; */
+    background-color: var(--secondary-c2);
     height: 100vh;
-    color: #fff;
+    color: var(--primary-c1);
     min-height: 500;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'MyFont', sans-serif;
 }
 
 .home .max-width{
@@ -102,10 +120,12 @@
 .home .home-content{
     position: absolute;
     justify-content: center;
-    top: 40%;
+    align-items: center;
+    top: 20%;
 }
 
 .home .home-content .text-1{
+    font-family: 'MyFont2', sans-serif;
     font-size: 27px;
 }
 .home .home-content .text-2{
@@ -115,29 +135,30 @@
 
 }
 .home .home-content .text-3{
+    font-family: 'MyFont2', sans-serif;
     font-size: 27px;
     margin: 5px 0;
 }
 
 .home .home-content .text-3 span{
     font-weight: 500;
-    color: crimson;
+    color: var(--primary-c2);
 }
 
 .home .home-content a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: var(--primary-c2);
+    color: var(--primary-c1);
     font-size: 25px;
-    padding: 12px 36px;
+    padding: 5px 20px;
     margin-top: 20px;
     border-radius: 10px;
-    border: 2px solid crimson;
+    border: 2px solid var(--primary-c2);
     transition: all 0.5s ease;
 }
 
 .home .home-content a:hover{
-    color: crimson;
+    color: var(--primary-c2);
     background: none;
 }    
 
@@ -155,7 +176,7 @@ section{
 }
 
 .about, .services, .skills{
-font-family: 'Poppins', sans-serif;
+    font-family: 'MyFont', sans-serif;
 }    
 .about .about-content,
 .services .serv-content,
@@ -173,7 +194,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60;
     padding-bottom: 20px; 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'MyFont', sans-serif;
 }    
 section .title::before{
     content: "";
@@ -190,9 +211,9 @@ section .title::after{
     bottom: -14px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: var(--primary-c2);
     padding: 5px;
-    background: #fff;
+    background: var(--primary-c1);
     transform: translateX(-50%);
 }    
 
@@ -203,9 +224,12 @@ section .title::after{
 
 
 /* about section styling start */
-
+.about {
+    background-color: var(--secondary-c1);
+    color: var(--primary-c1);
+}
 .about .max-width {
-    height: 100vh ;
+    /* height: 100vh ; */
     
 }
 
@@ -215,22 +239,30 @@ section .title::after{
 .about .about-content .left{
     width: 45%;
 }
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
+.about .about-content .left .fakeCanvas{
+    background-color: var(--primary-c2);
+    height: 500px;
+    width: 500px;
     object-fit: cover;
-    border-radius: 50%;  
+    /* border-radius: 50%;   */
 }
 .about .about-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+.about .about-content .right .text1{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
-    color: crimson;
+.about .about-content .right .text2 {
+    font-family: 'MyFont2', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+
+}
+.about .about-content .right .text1 span{
+    color: var(--primary-c2);
 }
 .about .about-content .right  p{
     text-align: justify;
@@ -238,18 +270,18 @@ section .title::after{
 }
 .about .about-content .right  a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: var(--primary-c2);
+    color: var(--primary-c1);
     font-size: 20px;
     font-weight: 500;
     padding: 5px 20px;
     margin-top: 20px;
     border-radius: 10px;
-    border: 2px solid crimson;
+    border: 2px solid var(--primary-c2);
     transition: all 0.5s ease;
 }
 .about .about-content .right  a:hover{
-    color: crimson;
+    color: var(--primary-c2);
     background: none;
     
 }
@@ -272,11 +304,11 @@ section .title::after{
 /* services section styling */
 
 .services{
-    color: #fff;
-    background: #111;
+    color: var(--primary-c1);
+    background: var(--secondary-c3);
 }
 .services .title::before{
-    background: #fff;
+    background: var(--primary-c1);
 }
 .services .title::after{
     background: #111;
@@ -292,7 +324,7 @@ section .title::after{
     cursor: pointer;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: var(--primary-c2);
 }
 .services .serv-content .card .box{
     transition: all 0.5s ease;
@@ -302,11 +334,11 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson ;
+    color: var(--primary-c2) ;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
-    color: #fff;
+    color: var(--primary-c1);
 }
 .services .serv-content .card .text{
     font-size: 25px;
@@ -319,7 +351,7 @@ section .title::after{
 
 
 
-
+    
 /* skills sections styling */
  
 .skills .title::after{
@@ -328,11 +360,16 @@ section .title::after{
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.skills .skills-content .left .text-1{
+
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+.skills .skills-content .left .text-2 {
+    font-family: 'MyFont2', sans-serif;
+}
+
 
 
 
