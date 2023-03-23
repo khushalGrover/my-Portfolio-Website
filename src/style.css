@@ -72,14 +72,19 @@
     
 }
 .navbar .menu li a{
-    color: var(--primary-c1);
+    color: var(--secondary-c1);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.5s ease;
 }
+.navbar.sticky .menu li a{
+    color: var(--primary-c1);
+
+}
 .navbar .menu li a:hover{
     color: var(--primary-c2);
+    font-weight: 800;
 }
 .navbar.sticky .menu li a:hover{
     color: var(--primary-c1);
@@ -102,7 +107,7 @@
 /* Home section styling*/
 .home{
     display: flex;
-    /* background: url("../static/images/banner.jpg")no-repeat center; */
+    /* background: url("../static/images/bitmap-1.png")no-repeat center; */
     background-color: var(--secondary-c2);
     height: 100vh;
     color: var(--primary-c1);
@@ -121,7 +126,7 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 20%;
+    top: 40%;
 }
 
 .home .home-content .text-1{
@@ -143,6 +148,20 @@
 .home .home-content .text-3 span{
     font-weight: 500;
     color: var(--primary-c2);
+}
+
+.banner, .character {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+}
+
+.character {
+    /* right: %;;
+    top: -30%;
+    height: 1000px;
+    width: 1000px; */
 }
 
 .home .home-content a{
@@ -201,7 +220,7 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 280px;
     height: 3px;
     background: rgb(1,1,1);
     transform: translateX(-50%);
@@ -227,6 +246,7 @@ section .title::after{
 .about {
     background-color: var(--secondary-c1);
     color: var(--primary-c1);
+    height: 100vh;
 }
 .about .max-width {
     /* height: 100vh ; */
@@ -235,6 +255,8 @@ section .title::after{
 
 .about .title::after{
     content: "Who I am";
+    background: var(--secondary-c1);
+
 }
 .about .about-content .left{
     width: 45%;
@@ -305,18 +327,18 @@ section .title::after{
 
 .services{
     color: var(--primary-c1);
-    background: var(--secondary-c3);
+    background: var(--secondary-c2);
 }
 .services .title::before{
-    background: var(--primary-c1);
+    background: var(--primary-c2);
 }
 .services .title::after{
-    background: #111;
+    background: var(--secondary-c2);
     content: "what i provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: var(--secondary-c3);
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
