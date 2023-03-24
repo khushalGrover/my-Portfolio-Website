@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'MyFont';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../static/fonts/indie_flower/IndieFlower.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyFont2';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../static/fonts/itim/Itim-Regular.ttf') format('truetype');
+}
+
+
+
+
+
+    /* Common Styling... */
 *{
     margin: 0;
     padding:0;
@@ -5,6 +23,26 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
 }
+
+.home, .about, .skill{
+    height: 100%;
+    background-color: rgb(255, 169, 201);
+    
+}
+
+.odd-section {
+    background-color: var(--secondary-c1);
+    color: var(--primary-c1);
+}
+
+:root {
+    --primary-c1: #F7F8D7;
+    --primary-c2: #E9C6A6;
+    --secondary-c1: #3C3B3B;
+    --secondary-c2: #2E2E2E;
+    --secondary-c3: #111;
+}
+
 body{ 
     scroll-behavior: smooth;
 }
@@ -17,27 +55,11 @@ section{
     /* grid-template-rows: auto 1fr auto; */
     gap: 1vh;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-ul{
-    display: flex;
-    gap: 1vw;
-}
-li{
-    list-style: none;
-}
 a{
     text-decoration: none;
 }
-.right{
-    display: flex;
-    gap: 1vw;
-}
 .horizontal-scroll{
-    background-color: aqua;
+    background-color: rgb(212, 255, 0);
     padding: 1vh 1vw;
     display: grid;
     height: 100%;
@@ -48,10 +70,69 @@ a{
 .horizontal-scroll::-webkit-scrollbar{
     visibility: hidden;
 }
-.home, .about, .skill{
-    height: 100%;
-    background-color: rebeccapurple;
-}
+
 main{
     height: 100%;
+}
+
+
+
+
+
+
+/* NavBar styling... */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+    gap: 1vw;
+}
+.navbar li{
+    list-style: none;
+}
+
+.navbar .right{
+    display: flex;
+    gap: 1vw;
+}
+
+
+
+
+/* Home Section Styling */
+
+
+
+
+
+
+
+/* Home Section Styling */
+
+
+
+
+
+
+/* Home Section Styling */
+
+
+
+
+
+/* Footer */
+.footer ul{
+    display: flex;
+    gap: 1vw;
+}
+.footer li{
+    list-style: none;
+}
+
+.footer .right{
+    display: flex;
+    gap: 1vw;
 }
