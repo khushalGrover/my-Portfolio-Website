@@ -20,51 +20,74 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-family: 'MyFont2', sans-serif;
+    font-size: 2vh;
 }
 
 .home, .about, .skill{
     height: 100%;
-    background-color: rgb(255, 169, 201);
+    padding: 3vh 3vw;
+    background-color: rgb(217, 92, 138);
     
 }
-
-.odd-section {
-    background-color: var(--secondary-c1);
-    color: var(--primary-c1);
-}
-
 :root {
     --primary-c1: #F7F8D7;
     --primary-c2: #E9C6A6;
+    --primary-c3: #d95c8a;
     --secondary-c1: #3C3B3B;
     --secondary-c2: #2E2E2E;
     --secondary-c3: #111;
 }
+.odd-section {
+    background-color: var(--secondary-c1);
+    color: var(--primary-c1);
+}
+.even-section {
+    
+    background-color: var(--primary-c1);
+    color: var(--secondary-c1);
+}
 
+
+
+.logo {
+    font-size: 4vh;
+    color: var(--primary-c1);
+    font-family: 'MyFont', sans-serif;
+    font-weight: 800;
+    /* padding: 1vh 1vw; */
+}
+.logo span {
+    font-family: 'MyFont', sans-serif;
+    font-size: 4vh;
+    color: var(--primary-c2);
+
+}
 body{ 
     scroll-behavior: smooth;
+    background-color: var(--secondary-c2);
 }
 section{
     width: 100vw;
     height: 100vh;
-    padding: 1vh 1vw;
+    /* padding: 1vh 1vw; */
     display: flex;
     flex-direction: column;
     /* grid-template-rows: auto 1fr auto; */
-    gap: 1vh;
+    /* gap: 1vh; */
 }
 a{
+
     text-decoration: none;
+    color: var(--secondary-c3);
 }
 .horizontal-scroll{
-    background-color: rgb(212, 255, 0);
-    padding: 1vh 1vw;
+    /* background-color: rgb(212, 255, 0); */
+    /* padding: 1vh 1vw; */
     display: grid;
     height: 100%;
-    grid-template-columns: 96vw 96vw 96vw;
-    gap: 2vw;
+    grid-template-columns: 100vw 100vw 100vw;
+    /* gap: 2vw; */
     overflow-x: scroll;
 }
 .horizontal-scroll::-webkit-scrollbar{
@@ -82,43 +105,149 @@ main{
 
 /* NavBar styling... */
 .navbar{
+    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1vh 3vw;
 }
 .navbar ul{
     display: flex;
     gap: 1vw;
+    align-items: center;
 }
 .navbar li{
     list-style: none;
 }
+.navbar li a, .navbar .menu-btn {
+    color: var(--primary-c1);
+    font-size: 3vh;
+}
 
 .navbar .right{
     display: flex;
+    align-items: center;
     gap: 1vw;
+}
+
+section.main-container{
+    
+    background: url("/static/images/fakeCanvas.png" );
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    /* background-position-x: 0%; */
+    /* background-size: 100vh; */
+
+    
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60;
+    padding-bottom: 20px; 
+    font-family: 'MyFont', sans-serif;
+}  
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 280px;
+    height: 3px;
+    background: rgb(1,1,1);
+    transform: translateX(-50%);
+}    
+section .title::after{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--primary-c2);
+    padding: 0px 10px;
+    background: var(--primary-c1);
+    transform: translateX(-50%);
+}    
+
+
+/* Home Section Styling */
+.home {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.home .text-1 , .home .text-3{
+    font-size: 27px;
+}
+.home .text-3 span {
+    color: var(--primary-c2);
+    font-size: 27px;
+}
+
+.home .text-2 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+}
+.home a, .about a{
+    /* display: inline-block; */
+    background: transparent;
+    color: var(--primary-c2);
+    font-size: 25px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: auto;
+    border: 2px solid var(--primary-c1);
+    transition: all 0.5s ease;
+}
+
+.home .banner {
+
+    /* position: absolute; */
+    /* top: 0%;
+    right: 0%; */
+    /* height: 100vh; */
+}
+
+
+
+/* About Section Styling */
+.about {
+    background: linear-gradient(90deg, transparent 0%, var(--primary-c1) 55%, var(--primary-c1) 100%);
+}
+.about .title::after{
+    content: "Who I am";
+    background: var(--primary-c1);
+    color: var(--primary-c2);
+
+}
+.about .content {
+    
+    position: relative;
+}
+.about .right {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 50%;
 }
 
 
 
 
-/* Home Section Styling */
+/* Services Section Styling */
+.skill .title::after{
+    content: "Who I am";
+    background: var(--primary-c3);
+    color: var(--secondary-c3);
 
-
-
-
-
-
-
-/* Home Section Styling */
-
-
-
-
-
-
-/* Home Section Styling */
-
+}
 
 
 
