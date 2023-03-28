@@ -10,7 +10,14 @@
     font-style: normal;
     src: url('../static/fonts/itim/Itim-Regular.ttf') format('truetype');
 }
-
+:root {
+    --primary-c1: #F7F8D7;
+    --primary-c2: #E9C6A6;
+    --primary-c3: #d95c8a;
+    --secondary-c1: #3C3B3B;
+    --secondary-c2: #2E2E2E;
+    --secondary-c3: #111;
+}
 
 
 
@@ -24,49 +31,28 @@
     font-size: 2vh;
 }
 
-.home, .about, .skill{
+.horizontal-scroll section{
     height: 100%;
     padding: 3vh 3vw;
     /* background-color: rgb(255, 255, 255); */
     
 }
-:root {
-    --primary-c1: #F7F8D7;
-    --primary-c2: #E9C6A6;
-    --primary-c3: #d95c8a;
-    --secondary-c1: #3C3B3B;
-    --secondary-c2: #2E2E2E;
-    --secondary-c3: #111;
-}
+
 .odd-section {
     background-color: var(--secondary-c1);
     color: var(--primary-c1);
 }
 .even-section {
     
-    /* background-color: var(--primary-c1); */
+    background-color: var(--secondary-c1);
     /* background-image: url("../static/images/bitmap.png"); */
     background-size: cover;
-    color: var(--secondary-c1);
+    /* color: var(--prim); */
     background-repeat: no-repeat;
     
 }
 
 
-
-.logo {
-    font-size: 4vh;
-    color: var(--primary-c1);
-    font-family: 'MyFont', sans-serif;
-    font-weight: 800;
-    /* padding: 1vh 1vw; */
-}
-.logo span {
-    font-family: 'MyFont', sans-serif;
-    font-size: 4vh;
-    color: var(--primary-c2);
-
-}
 body{ 
     scroll-behavior: smooth;
     background-color: var(--secondary-c2);
@@ -80,10 +66,11 @@ section{
     /* grid-template-rows: auto 1fr auto; */
     /* gap: 1vh; */
 }
-a{
-
-    text-decoration: none;
-    color: var(--secondary-c3);
+section.main-container{
+    background: url("/static/images/fakeCanvas.png" );
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
 }
 .horizontal-scroll{
     /* background-color: rgb(212, 255, 0); */
@@ -97,12 +84,79 @@ a{
 .horizontal-scroll::-webkit-scrollbar{
     visibility: hidden;
 }
+.horizontal-scroll a{
+    /* display: inline-block; */
+    background: transparent;
+    color: var(--primary-c2);
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: auto;
+    border: 2px solid var(--primary-c1);
+    transition: all 0.5s ease;
+}
 
 main{
     height: 100%;
 }
-
-
+.heading-text {
+    font-family: 'MyFont', sans-serif;
+    font-size: 6vh;
+    font-weight: 800;
+}
+.sub-heading-text {
+    font-size: 27px;
+}
+.sub-heading-text span {
+    color: var(--primary-c2);
+    font-size: 27px;
+}
+.sub-heading-text-2 {
+    
+}
+.title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 60;
+    padding-bottom: 20px; 
+}  
+.title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 280px;
+    height: 3px;
+    background: var(--primary-c2);
+    transform: translateX(-50%);
+}    
+.title::after{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--primary-c2);
+    padding: 0px 10px;
+    background: var(--secondary-c1);
+    transform: translateX(-50%);
+}    
+a{
+    text-decoration: none;
+}
+.logo {
+    font-size: 4vh;
+    color: var(--primary-c1);
+    font-family: 'MyFont', sans-serif;
+    font-weight: 800;
+    /* padding: 1vh 1vw; */
+}
+.logo span {
+    font-family: 'MyFont', sans-serif;
+    font-size: 4vh;
+    color: var(--primary-c2);
+}
 
 
 
@@ -127,51 +181,12 @@ main{
     color: var(--primary-c1);
     font-size: 3vh;
 }
-
 .navbar .right{
     display: flex;
     align-items: center;
     gap: 1vw;
 }
 
-section.main-container{
-    
-    background: url("/static/images/fakeCanvas.png" );
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto 100%;
-    
-}
-
-section .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60;
-    padding-bottom: 20px; 
-    font-family: 'MyFont', sans-serif;
-}  
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 280px;
-    height: 3px;
-    background: rgb(1,1,1);
-    transform: translateX(-50%);
-}    
-section .title::after{
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    font-size: 20px;
-    color: var(--primary-c2);
-    padding: 0px 10px;
-    background: var(--primary-c1);
-    transform: translateX(-50%);
-}    
 
 
 
@@ -185,32 +200,9 @@ section .title::after{
     justify-content: center;
     /* align-items: center; */
 }
-.home .text-1 , .home .text-3{
-    font-size: 27px;
-}
-.home .text-3 span {
-    color: var(--primary-c2);
-    font-size: 27px;
-}
 
-.home .text-2 {
-    font-family: 'MyFont', sans-serif;
-    font-size: 55px;
-    font-weight: 600;
-}
-.home a, .about a{
-    /* display: inline-block; */
-    background: transparent;
-    color: var(--primary-c2);
-    font-size: 25px;
-    text-align: center;
-    padding: 5px 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    width: auto;
-    border: 2px solid var(--primary-c1);
-    transition: all 0.5s ease;
-}
+
+
 
 .home .banner {
 
@@ -226,11 +218,9 @@ section .title::after{
 
 /* About Section Styling */
 .about {
-    /* background-image: url("../static/images/bitmap.png"); */
-    background-color: var(--primary-c1);
+    background: transparent;
     display: flex;
     flex-direction: column;
-
 }
 .about .title {
     
@@ -238,29 +228,24 @@ section .title::after{
 .about .title::after{
     z-index: 1000;
     content: "Who I am";
-    background: var(--primary-c1);
-    color: var(--primary-c2);
 
 }
 .about .title::before {
-    width: 0;
+    
 }
 .about .content {
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: right;
+    align-items: flex-end;
+    
 }
 .about .upper {
-    /* border: #111 solid 5px;
-    border-radius: 10px; */
-    /* margin: 5vh 10vw 5vh 20vw; */
-    padding: 5vh 5vw 5vh 50vw;
-    height: 100%;
-    color: var(--secondary-c1);
+    width: 50vw;
+    background-color: var(--secondary-c1);
+    /* padding: 5vh 5vw 5vh 40vw; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,14 +253,14 @@ section .title::after{
     
 }
 .about .upper .text1 {
-    font-size: 3vh;
 }
 .about .right .text2 {
-    font-size: 2vh;
 }
 .about .lower {
-    color: #000;   
-    /* width: 100%; */
+    padding: 5vh 5vw 5vh 10vw;
+    height: 100%;
+    display: flex;
+    
     left: 0%; 
     height: 100%;
 }
@@ -286,7 +271,7 @@ section .title::after{
 }
 
 .about .lower .grid {
-    background: #fff;
+    /* background: #fff; */
 
 }
 
@@ -306,9 +291,6 @@ section .title::after{
 .skill .title::after{
     z-index: 1000;
     content: "What I know";
-    background: var(--secondary-c1);
-    color: var(--primary-c1);
-
 }
 
 
