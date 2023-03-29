@@ -1,0 +1,90 @@
+:root {
+    --primary-c1: #F7F8D7;
+    --primary-c2: #E9C6A6;
+    --primary-c3: #d95c8a;
+    --secondary-c1: #3C3B3B;
+    --secondary-c2: #2E2E2E;
+    --secondary-c3: #111;
+} 
+/* Common Styling... */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'MyFont2', sans-serif;
+    font-size: 1rem;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    background-color: var(--secondary-c2);
+    gap: 2vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw 2vh;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+li a {
+    color: var(--primary-c1);
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+li a:hover {
+    color: var(--primary-c3);
+    text-decoration: underline;
+}
+.logo {
+    color: var(--primary-c1);
+    font-size: 4vh;
+    font-weight: bolder;
+}
+.logo span {
+    color: var(--primary-c2);
+    font-size: 4vh;
+}
+
+/* horizontal scroll */
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, calc(100%));
+    gap: 2vw;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+
+}
+main::-webkit-scrollbar{
+    /* visibility: hidden; */
+}
+/* main::-webkit-slider-thumb{
+    background: #434343;
+    border-radius: 16px;
+    box-shadow:inset 2px 2px 2px hsla(0,0%,100%,.25), 
+    inset -2px -2px 2px rgba(0,0,0,.25);
+}
+main::-webkit-scrollbar-track{
+    background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
+} */
+section{
+    scroll-snap-align: start;
+    background-color: var(--secondary-c1);
+}
