@@ -11,7 +11,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'MyFont2', sans-serif;
+    font-family: calibri;
     font-size: 1rem;
 }
 body{
@@ -85,6 +85,35 @@ main::-webkit-scrollbar-track{
     background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
 } */
 section{
+    height: 100%;
     scroll-snap-align: start;
     background-color: var(--secondary-c1);
+}
+.home, .about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    flex: 1;
+    padding: 2vw 2vh;
+    overflow: hidden;
+    max-height: 100%;
+}
+h1,h2{
+    color: hsl(28, 44%, 75%);
+    font-size: 3vw;
+    margin: 1vh 0;
+}
+h2{
+    font-size: 2vw;
+}
+p{
+    color:hsl(60, 76%, 93%);
+    font-size: 1vw;
+    margin-bottom: 1vh;
+}
+.about .img{
+    transform: scaleX(-1);
 }
