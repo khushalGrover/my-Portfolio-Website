@@ -5,8 +5,7 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-
-
+        
     });
      
     // toggle menu/navBar script

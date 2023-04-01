@@ -1,10 +1,13 @@
 :root {
     --primary-c1: #F7F8D7;
     --primary-c2: #E9C6A6;
-    --primary-c3: #d95c8a;
+    --primary-c3: #db5461;
+    --primary-c4: #593c8f;
     --secondary-c1: #3C3B3B;
     --secondary-c2: #2E2E2E;
     --secondary-c3: #111;
+    /* --tertiary-c1: #AEB063;
+    --tertiary-c2: #9D6939; */
 } 
 /* Common Styling... */
 *{
@@ -12,7 +15,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'MyFont2', sans-serif;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 body{
     width: 100vw;
@@ -24,7 +27,12 @@ body{
     background-color: var(--secondary-c2);
     gap: 2vh;
 }
-
+main > section:nth-child(2n+1) {
+    color: var(--primary-c1);
+}
+main > section:nth-child(2n) {
+    color: var(--primary-c1);
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -32,6 +40,9 @@ nav{
     padding: 2vw 2vh;
     flex-wrap: wrap;
     align-items: center;
+}
+.navbar .sticky{
+    background: #000;
 }
 ul{
     display: flex;
@@ -45,9 +56,10 @@ li a {
     color: var(--primary-c1);
     text-decoration: none;
     font-size: 2.5vh;
+    transition: all 0.3s ease-in-out;
 }
 li a:hover {
-    color: var(--primary-c3);
+    color: var(--primary-c2);
     text-decoration: underline;
 }
 .logo {
@@ -72,10 +84,13 @@ main{
     overflow-x: scroll;
 
 }
+
+
 main::-webkit-scrollbar{
     /* visibility: hidden; */
 }
-/* main::-webkit-slider-thumb{
+/*
+main::-webkit-slider-thumb{
     background: #434343;
     border-radius: 16px;
     box-shadow:inset 2px 2px 2px hsla(0,0%,100%,.25), 
@@ -87,4 +102,5 @@ main::-webkit-scrollbar-track{
 section{
     scroll-snap-align: start;
     background-color: var(--secondary-c1);
+    /* height: 100%; */
 }

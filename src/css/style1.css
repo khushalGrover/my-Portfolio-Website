@@ -20,19 +20,19 @@
     /* background-color: rgb(255, 255, 255); */ 
 }
 
-.odd-section {
+/* .odd-section {
     background-color: var(--secondary-c1);
     color: var(--primary-c1);
-}
-.even-section {
+} */
+
+
+/* .even-section {
     
     background-color: var(--secondary-c1);
-    /* background-image: url("../static/images/bitmap.png"); */
     background-size: cover;
-    /* color: var(--prim); */
     background-repeat: no-repeat;
     
-}
+} */
 
 
 /* body{ 
