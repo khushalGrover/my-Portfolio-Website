@@ -85,7 +85,7 @@ main::-webkit-scrollbar-track{
     background: linear-gradient(90deg,#434343,#434343 1px,#111 0,#111);
 } */
 section{
-    height: 100%;
+    /* height: 100%; */
     scroll-snap-align: start;
     background-color: var(--secondary-c1);
 }
