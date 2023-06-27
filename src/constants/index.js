@@ -44,14 +44,6 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Developer",
-    icon: mobile,
-  },
-  {
     title: "Unity Developer",
     icon: backend,
   },
@@ -59,9 +51,21 @@ const services = [
     title: "3D Generalist (Blender)",
     icon: creator,
   },
+  {
+    title: "Web Developer",
+    icon: web,
+  },
 ];
 
 const technologies = [
+  {
+    name: "unity",
+    icon: unity,
+  },
+  {
+    name: "blender",
+    icon: blender,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -79,14 +83,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "Three JS",
     icon: threejs,
   },
@@ -98,69 +94,36 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "unity",
-    icon: unity,
-  },
-  {
-    name: "blender",
-    icon: blender,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "3D Generalist",
+    company_name: "Fanclash11 private limited",
+    // icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2021 - July 2022 (1 year)",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Developing and maintaining mobile games using Unity Engine and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality games.",
+      "Implementing responsive design and ensuring cross-device compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Game Artist",
+    company_name: "Fanclash11 private limited",
+    // icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2021 - Jun 2021 (6 months)",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desgin and model 3D assets for mobile games using Blender.",
+      "Bring new ideas for game art and design to the team.",
+      "Build prototypes to explore new game ideas and directions.",
+      "Collaborate with the team to develop and refine the game design.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials = [
@@ -192,37 +155,33 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Speed Car Run",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Speed car run is a casual game. In this game, we have blended all the adrenalin, fun and excitement a pair of tires can offer together for you. With the amazing racing experience and breathtaking graphics, you won’t be able to put your phone down.",
     tags: [
       {
-        name: "react",
+        name: "unity",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Blender",
         color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
       },
     ],
     image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Tik Tac Toe",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "Unity",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Blender",
         color: "green-text-gradient",
       },
       {
@@ -230,28 +189,28 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    // image: jobit,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "proj3 Name",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
     tags: [
       {
-        name: "nextjs",
+        name: "photoshop cs6",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "blender",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Adobe Illustrator",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    // image: tripguide,
     source_code_link: "https://github.com/",
   },
 ];
