@@ -153,6 +153,7 @@ const testimonials = [
   },
 ];
 
+
 const projects = [
   {
     name: "Speed Car Run",
@@ -168,7 +169,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: carrent,
+    // image: carrent,
     source_code_link: "https://github.com/",
   },
   {
@@ -184,10 +185,10 @@ const projects = [
         name: "Blender",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      // {
+      //   name: "scss",
+      //   color: "pink-text-gradient",
+      // },
     ],
     // image: jobit,
     source_code_link: "https://github.com/",
