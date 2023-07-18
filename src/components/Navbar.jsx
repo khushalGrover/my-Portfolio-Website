@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-secondary-text text-[18px] font-bold cursor-pointer flex hover:text-quinary-text'>
             Khushal Grover &nbsp;
             <span className='sm:block hidden'> | 3D Generalist </span>
           </p>
@@ -54,8 +54,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-quinary-text font-extrabold" : "text-secondary-text"
+              } hover:text-quinary-text text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-quinary-text font-extrabold" : "text-secondary-text"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);

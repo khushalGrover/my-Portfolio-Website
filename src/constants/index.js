@@ -45,11 +45,11 @@ export const navLinks = [
 const services = [
   {
     title: "Unity Developer",
-    icon: backend,
+    icon: unity,
   },
   {
     title: "3D Generalist (Blender)",
-    icon: creator,
+    icon: blender,
   },
   {
     title: "Web Developer",
