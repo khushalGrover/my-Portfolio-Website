@@ -19,12 +19,12 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  liveDemo,
+  speedCarRun,
   threejs,
   unity,
   blender,
+  webProject,
 } from "../assets";
 
 export const navLinks = [
@@ -128,27 +128,27 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    name: "Sara Lee",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    name: "Chris Brown",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    name: "Lisa Wang",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -168,14 +168,19 @@ const projects = [
         name: "Blender",
         color: "green-text-gradient",
       },
+      {
+        name: "Android Game",
+        color: "pink-text-gradient",
+      },
     ],
-    // image: carrent,
-    source_code_link: "https://github.com/",
+    image: speedCarRun,
+    source_code_link: "https://github.com/khushalGrover/Speed-Car-Run",
+    live_demo_link: "https://khushalgrover.itch.io/speed-car-run",
   },
   {
     name: "Tik Tac Toe",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "3D Tic Tac Toe is an engaging web-based game developed using the Unity engine, offering a fresh and immersive twist on the classic tic-tac-toe concept. Set in a vibrant three-dimensional environment, this modern take on the beloved game challenges players to think strategically and strategically to outmaneuver their opponents.",
     tags: [
       {
         name: "Unity",
@@ -185,34 +190,37 @@ const projects = [
         name: "Blender",
         color: "green-text-gradient",
       },
-      // {
-      //   name: "scss",
-      //   color: "pink-text-gradient",
-      // },
-    ],
-    // image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "proj3 Name",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
-    tags: [
       {
-        name: "photoshop cs6",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "blender",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Adobe Illustrator",
+        name: "Web Game",
         color: "pink-text-gradient",
       },
     ],
-    // image: tripguide,
+    // image: jobit,
     source_code_link: "https://github.com/",
+    live_demo_link: "https://coolors.co/",
+
+  },
+  {
+    name: "50 Days 50 Projects",
+    description:
+      "This is a 50 days 50 projects challenge. In this challenge, I will be making 50 projects in 50 days. I will be using HTML, CSS, and JavaScript to make these projects. ",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: webProject,
+    source_code_link: "https://github.com/khushalGrover/Web_Base_Minor_Projects.github.io",
+    live_demo_link: "https://khushalgrover.github.io/Web_Base_Minor_Projects.github.io/",
   },
 ];
 
