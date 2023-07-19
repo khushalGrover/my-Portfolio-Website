@@ -1,30 +1,25 @@
 import {
-  mobile,
-  backend,
-  creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   liveDemo,
-  speedCarRun,
   threejs,
   unity,
   blender,
   webProject,
+  scr_1,
+  scr_2,
+  scr_3,
+  bullet,
+  bullet2,
+  rk1,
+  rk2,
+  rk3,
 } from "../assets";
 
 export const navLinks = [
@@ -35,6 +30,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "gallery",
+    title: "Gallery",
   },
   {
     id: "contact",
@@ -126,31 +125,40 @@ const experiences = [
   
 ];
 
-const testimonials = [
+const artItems = [
   {
-    name: "Sara Lee",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Speed Car Run",
+    image: scr_1,
   },
   {
-    name: "Chris Brown",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Speed Car Run(2)",
+    image: scr_2,
   },
   {
-    name: "Lisa Wang",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Speed Car Run(3)",
+    image: scr_3,
   },
   {
-    name: "Sara Lee",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Bullet",
+    image: bullet,
   },
   {
-    name: "Chris Brown",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Bullet(2)",
+    image: bullet2,
   },
   {
-    name: "Lisa Wang",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Rk1",
+    image: rk1,
   },
+  {
+    name: "Rk2",
+    image: rk2,
+  },
+  {
+    name: "Rk3",
+    image: rk3,
+  },
+  
 ];
 
 
@@ -173,7 +181,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: speedCarRun,
+    image: scr_1,
     source_code_link: "https://github.com/khushalGrover/Speed-Car-Run",
     live_demo_link: "https://khushalgrover.itch.io/speed-car-run",
   },
@@ -224,4 +232,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, artItems, projects };

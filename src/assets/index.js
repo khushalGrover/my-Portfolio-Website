@@ -28,7 +28,14 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import speedCarRun from "./speedCarRun.png";
+import scr_1 from "./gallery/scr_1920.png";
+import scr_2 from "./gallery/scr_1920_shade.png";
+import scr_3 from "./gallery/scr.6.png";
+import bullet from "./gallery/bullet3.png";
+import bullet2 from "./gallery/bullet4.png";
+import rk1 from "./gallery/rk1.png";
+import rk2 from "./gallery/rk2.png";
+import rk3 from "./gallery/rk3.png";
 import liveDemo from "./liveDemo.png";
 import webProject from "./webProject.jpg";
 
@@ -61,6 +68,13 @@ export {
   starbucks,
   tesla,
   liveDemo,
-  speedCarRun,
   webProject,
+  scr_1,
+  scr_2,
+  scr_3,
+  bullet,
+  bullet2,
+  rk1,
+  rk2,
+  rk3,
 };
