@@ -28,9 +28,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import scr_1 from "./gallery/scr_1920.png";
-import scr_2 from "./gallery/scr_1920_shade.png";
-import scr_3 from "./gallery/scr.6.png";
+import scr_1 from "./gallery/scr_1920_1.png";
+import scr_2 from "./gallery/scr_1920_2.png";
+import scr_3 from "./gallery/scr_1920_3.png";
 import bullet from "./gallery/bullet3.png";
 import bullet2 from "./gallery/bullet4.png";
 import rk1 from "./gallery/rk1.png";

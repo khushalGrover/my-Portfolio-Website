@@ -139,14 +139,6 @@ const artItems = [
     image: scr_3,
   },
   {
-    name: "Bullet",
-    image: bullet,
-  },
-  {
-    name: "Bullet(2)",
-    image: bullet2,
-  },
-  {
     name: "Rk1",
     image: rk1,
   },
@@ -157,6 +149,14 @@ const artItems = [
   {
     name: "Rk3",
     image: rk3,
+  },
+  {
+    name: "Bullet",
+    image: bullet,
+  },
+  {
+    name: "Bullet(2)",
+    image: bullet2,
   },
   
 ];
@@ -181,7 +181,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: scr_1,
+    image: scr_3,
     source_code_link: "https://github.com/khushalGrover/Speed-Car-Run",
     live_demo_link: "https://khushalgrover.itch.io/speed-car-run",
   },

@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { artItems } from "../constants";
 
-const FeedbackCard = ({
+const ArtItemCard = ({
   index,
   name,
   image,
@@ -36,11 +36,11 @@ const Gallery = () => {
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap place-content-evenly gap-3`}>
         {artItems.map((artItem, index) => (
-          <FeedbackCard key={artItem.name} index={index} {...artItem} />
+          <ArtItemCard key={artItem.name} index={index} {...artItem} />
         ))}
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Gallery, "");
+export default SectionWrapper(Gallery, "gallery");
