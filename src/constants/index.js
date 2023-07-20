@@ -185,29 +185,29 @@ const projects = [
     source_code_link: "https://github.com/khushalGrover/Speed-Car-Run",
     live_demo_link: "https://khushalgrover.itch.io/speed-car-run",
   },
-  {
-    name: "Tik Tac Toe",
-    description:
-      "3D Tic Tac Toe is an engaging web-based game developed using the Unity engine, offering a fresh and immersive twist on the classic tic-tac-toe concept. Set in a vibrant three-dimensional environment, this modern take on the beloved game challenges players to think strategically and strategically to outmaneuver their opponents.",
-    tags: [
-      {
-        name: "Unity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Blender",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Web Game",
-        color: "pink-text-gradient",
-      },
-    ],
-    // image: jobit,
-    source_code_link: "https://github.com/",
-    live_demo_link: "https://coolors.co/",
+  // {
+  //   name: "Tik Tac Toe",
+  //   description:
+  //     "3D Tic Tac Toe is an engaging web-based game developed using the Unity engine, offering a fresh and immersive twist on the classic tic-tac-toe concept. Set in a vibrant three-dimensional environment, this modern take on the beloved game challenges players to think strategically and strategically to outmaneuver their opponents.",
+  //   tags: [
+  //     {
+  //       name: "Unity",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Blender",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Web Game",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   // image: jobit,
+  //   source_code_link: "https://github.com/",
+  //   live_demo_link: "https://coolors.co/",
 
-  },
+  // },
   {
     name: "50 Days 50 Projects",
     description:
